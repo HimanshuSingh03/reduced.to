@@ -11,7 +11,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=reduced_to_db
     volumes:
-      - ../../tmp/data/postgresql:/var/lib/postgresql/data
+      - ../../tmp/data/postgresql:/var/lib/postgresql
     ports:
       - '5432:5432'
 
@@ -33,7 +33,7 @@ services:
       dockerfile: apps/frontend/Dockerfile
     restart: always
     ports:
-      - '5000:5000'
+      - '5001:5000'
     env_file: ../../.env
 
   backend:
