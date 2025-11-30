@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "skill": "backend-dev-guidelines",
+      "paths": ["apps/backend/**", "libs/prisma/**"],
+      "triggers": ["backend", "api", "NestJS", "Prisma", "database"]
+    },
+    {
+      "skill": "url-shortener-backend-guidelines",
+      "paths": ["apps/backend/**", "libs/prisma/**"],
+      "triggers": ["slug", "short link", "redirect", "expiration", "analytics", "click"]
+    },
+    {
+      "skill": "url-shortener-frontend-ux",
+      "paths": ["apps/frontend/**"],
+      "triggers": ["dashboard", "link list", "analytics page", "Qwik", "UI", "filter", "table"]
+    },
+    {
+      "skill": "auth-and-tenancy",
+      "paths": ["apps/backend/**", "apps/frontend/**", "libs/**"],
+      "triggers": ["auth", "login", "workspace", "tenant", "permission", "role"]
+    }
+  ]
+}

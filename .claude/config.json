@@ -1,0 +1,32 @@
+{
+  "project": {
+    "name": "reduced.to",
+    "root": "/Users/himanshu/Documents/Github/1Sphere/reduced.to"
+  },
+
+  "hooks": {
+    "UserPromptSubmit": [
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/hooks/skill-activation-prompt.js"
+    ],
+    "PostToolUse": [
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/hooks/post-tool-use-tracker.sh"
+    ],
+    "Stop": [
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/hooks/tsc-check.sh",
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/hooks/trigger-build-resolver.sh",
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/hooks/error-handling-reminder"
+    ]
+  },
+
+  "skills": {
+    "paths": [
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/skills"
+    ]
+  },
+
+  "agents": {
+    "paths": [
+      "/Users/himanshu/Documents/Github/1Sphere/reduced.to/.claude/agents"
+    ]
+  }
+}
