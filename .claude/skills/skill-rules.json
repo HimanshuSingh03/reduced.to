@@ -1,24 +1,108 @@
 {
-  "rules": [
-    {
-      "skill": "backend-dev-guidelines",
-      "paths": ["apps/backend/**", "libs/prisma/**"],
-      "triggers": ["backend", "api", "NestJS", "Prisma", "database"]
+  "version": "1.0",
+  "skills": {
+    "backend-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": [
+          "backend",
+          "api",
+          "nestjs",
+          "prisma",
+          "database",
+          "controller",
+          "service",
+          "repository",
+          "middleware",
+          "endpoint"
+        ],
+        "intentPatterns": [
+          ".*create.*controller.*",
+          ".*add.*service.*",
+          ".*implement.*api.*",
+          ".*backend.*route.*",
+          ".*prisma.*query.*"
+        ]
+      }
     },
-    {
-      "skill": "url-shortener-backend-guidelines",
-      "paths": ["apps/backend/**", "libs/prisma/**"],
-      "triggers": ["slug", "short link", "redirect", "expiration", "analytics", "click"]
+    "url-shortener-backend-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": [
+          "slug",
+          "short link",
+          "redirect",
+          "expiration",
+          "analytics",
+          "click",
+          "shortened url",
+          "link tracking",
+          "url shortener"
+        ],
+        "intentPatterns": [
+          ".*create.*short.*link.*",
+          ".*generate.*slug.*",
+          ".*track.*clicks.*",
+          ".*redirect.*logic.*",
+          ".*expire.*links.*"
+        ]
+      }
     },
-    {
-      "skill": "url-shortener-frontend-ux",
-      "paths": ["apps/frontend/**"],
-      "triggers": ["dashboard", "link list", "analytics page", "Qwik", "UI", "filter", "table"]
+    "url-shortener-frontend-ux": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": [
+          "dashboard",
+          "link list",
+          "analytics page",
+          "qwik",
+          "ui",
+          "filter",
+          "table",
+          "frontend",
+          "component",
+          "user interface"
+        ],
+        "intentPatterns": [
+          ".*create.*dashboard.*",
+          ".*display.*links.*",
+          ".*show.*analytics.*",
+          ".*filter.*table.*",
+          ".*qwik.*component.*"
+        ]
+      }
     },
-    {
-      "skill": "auth-and-tenancy",
-      "paths": ["apps/backend/**", "apps/frontend/**", "libs/**"],
-      "triggers": ["auth", "login", "workspace", "tenant", "permission", "role"]
+    "auth-and-tenancy": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "critical",
+      "promptTriggers": {
+        "keywords": [
+          "auth",
+          "login",
+          "workspace",
+          "tenant",
+          "permission",
+          "role",
+          "authentication",
+          "authorization",
+          "access control",
+          "multi-tenant"
+        ],
+        "intentPatterns": [
+          ".*implement.*auth.*",
+          ".*add.*login.*",
+          ".*workspace.*access.*",
+          ".*check.*permission.*",
+          ".*role.*based.*"
+        ]
+      }
     }
-  ]
+  }
 }
