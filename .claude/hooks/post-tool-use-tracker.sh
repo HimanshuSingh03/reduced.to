@@ -42,6 +42,16 @@ detect_repo() {
 
     # Common project directory patterns
     case "$repo" in
+        # Nx monorepo apps directory
+        apps)
+            # For Nx monorepos, get the app name
+            local app=$(echo "$relative_path" | cut -d'/' -f2)
+            if [[ -n "$app" ]]; then
+                echo "apps/$app"
+            else
+                echo "$repo"
+            fi
+            ;;
         # Frontend variations
         frontend|client|web|app|ui)
             echo "$repo"
@@ -53,6 +63,16 @@ detect_repo() {
         # Database
         database|prisma|migrations)
             echo "$repo"
+            ;;
+        # Nx/monorepo libs directory
+        libs)
+            # For Nx monorepos, get the lib name
+            local lib=$(echo "$relative_path" | cut -d'/' -f2)
+            if [[ -n "$lib" ]]; then
+                echo "libs/$lib"
+            else
+                echo "$repo"
+            fi
             ;;
         # Package/monorepo structure
         packages)

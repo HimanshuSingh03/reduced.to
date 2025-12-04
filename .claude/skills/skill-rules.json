@@ -25,6 +25,17 @@
           ".*backend.*route.*",
           ".*prisma.*query.*"
         ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "apps/backend/src/**/*.ts",
+          "apps/tracker/src/**/*.ts",
+          "libs/**/src/**/*.ts"
+        ],
+        "pathExclusions": [
+          "**/*.spec.ts",
+          "**/*.test.ts"
+        ]
       }
     },
     "url-shortener-backend-guidelines": {
@@ -49,6 +60,25 @@
           ".*track.*clicks.*",
           ".*redirect.*logic.*",
           ".*expire.*links.*"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "apps/backend/src/shortener/**/*.ts",
+          "apps/backend/src/analytics/**/*.ts",
+          "apps/backend/src/metadata/**/*.ts",
+          "apps/backend/src/tasks/**/*.ts",
+          "apps/backend/src/storage/**/*.ts",
+          "apps/backend/src/cache/**/*.ts",
+          "apps/tracker/src/**/*.ts",
+          "libs/safe-url/src/**/*.ts",
+          "libs/queue-manager/src/**/*.ts",
+          "libs/prisma/src/**/*.ts",
+          "libs/utils/src/**/*.ts"
+        ],
+        "pathExclusions": [
+          "**/*.spec.ts",
+          "**/*.test.ts"
         ]
       }
     },
@@ -76,6 +106,20 @@
           ".*filter.*table.*",
           ".*qwik.*component.*"
         ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "apps/frontend/src/**/*.tsx",
+          "apps/frontend/src/**/*.ts",
+          "apps/frontend/adapters/**/*.ts",
+          "apps/frontend/public/**/*"
+        ],
+        "pathExclusions": [
+          "**/*.spec.ts",
+          "**/*.spec.tsx",
+          "**/*.test.ts",
+          "**/*.test.tsx"
+        ]
       }
     },
     "auth-and-tenancy": {
@@ -101,6 +145,27 @@
           ".*workspace.*access.*",
           ".*check.*permission.*",
           ".*role.*based.*"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "apps/backend/src/auth/**/*.ts",
+          "apps/backend/src/core/users/**/*.ts",
+          "apps/backend/src/core/reports/**/*.ts",
+          "apps/backend/src/shared/**/guards/**/*.ts",
+          "apps/backend/src/shared/**/decorators/**/*.ts",
+          "apps/frontend/src/shared/auth.service.ts",
+          "apps/frontend/src/routes/login/**/*.ts*",
+          "apps/frontend/src/routes/register/**/*.ts*",
+          "apps/frontend/src/routes/logout/**/*.ts*",
+          "apps/frontend/src/routes/dashboard/**/auth/**/*.ts*",
+          "apps/frontend/src/routes/dashboard/layout.tsx"
+        ],
+        "pathExclusions": [
+          "**/*.spec.ts",
+          "**/*.spec.tsx",
+          "**/*.test.ts",
+          "**/*.test.tsx"
         ]
       }
     }

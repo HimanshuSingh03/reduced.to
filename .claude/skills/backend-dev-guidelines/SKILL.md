@@ -16,7 +16,6 @@ Automatically activates when working on:
 - Building controllers, services, repositories
 - Implementing middleware (auth, validation, error handling)
 - Database operations with Prisma
-- Error tracking with Sentry
 - Input validation with Zod
 - Configuration management
 - Backend testing and refactoring
@@ -266,9 +265,6 @@ Service patterns, DI, repository pattern, caching
 ### [validation-patterns.md](validation-patterns.md)
 Zod schemas, validation, DTO pattern
 
-### [sentry-and-monitoring.md](sentry-and-monitoring.md)
-Sentry init, error capture, performance monitoring
-
 ### [middleware-guide.md](middleware-guide.md)
 Auth, audit, error boundaries, AsyncLocalStorage
 
@@ -292,7 +288,6 @@ Full examples, refactoring guide
 ## Related Skills
 
 - **database-verification** - Verify column names and schema consistency
-- **error-tracking** - Sentry integration patterns
 - **skill-developer** - Meta-skill for creating and managing skills
 
 ---
