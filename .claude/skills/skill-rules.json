@@ -122,6 +122,55 @@
         ]
       }
     },
+    "frontend-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": [
+          "qwik",
+          "component",
+          "frontend",
+          "tailwind",
+          "styling",
+          "hover",
+          "animation",
+          "form",
+          "loader",
+          "action",
+          "route",
+          "signal",
+          "store",
+          "css",
+          "page",
+          "ui",
+          "button",
+          "icon",
+          "layout"
+        ],
+        "intentPatterns": [
+          ".*style.*",
+          ".*hover.*effect.*",
+          ".*add.*class.*",
+          ".*qwik.*component.*",
+          ".*create.*form.*",
+          ".*animation.*",
+          ".*tailwind.*"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "apps/frontend/src/**/*.tsx",
+          "apps/frontend/src/**/*.ts"
+        ],
+        "pathExclusions": [
+          "**/*.spec.ts",
+          "**/*.spec.tsx",
+          "**/*.test.ts",
+          "**/*.test.tsx"
+        ]
+      }
+    },
     "auth-and-tenancy": {
       "type": "domain",
       "enforcement": "suggest",

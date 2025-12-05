@@ -1,9 +1,14 @@
 {
-  "project": {
-    "name": "reduced.to",
-    "root": "/Users/himanshu/Documents/Github/1Sphere/reduced.to"
+  "permissions": {
+    "allow": [
+      "Edit:*",
+      "Write:*",
+      "MultiEdit:*",
+      "NotebookEdit:*",
+      "Bash:*"
+    ],
+    "defaultMode": "acceptEdits"
   },
-
   "hooks": {
     "UserPromptSubmit": [
       {
